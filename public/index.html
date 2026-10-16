@@ -601,7 +601,7 @@ function setOnline(){
 }
 function renderBoard(b){
   net.board = b || [];
-  const key = JSON.stringify(net.board); if (key === net.lastBoardKey) return; net.lastBoardKey = key;
+  const key = net.ok + JSON.stringify(net.board); if (key === net.lastBoardKey) return; net.lastBoardKey = key;
   document.querySelectorAll('.boardList').forEach(ol => {
     ol.textContent = '';
     if (!net.board.length){ const li = document.createElement('li'); li.className = 'empty'; li.textContent = net.ok ? 'No runs yet. Set the first score.' : 'Leaderboard is available on the hosted game.'; ol.appendChild(li); return; }
