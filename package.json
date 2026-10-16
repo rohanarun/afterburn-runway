@@ -1,0 +1,10 @@
+{
+  "name": "afterburn-runway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Afterburn Runway: 3D jet car game with live multiplayer and a leaderboard",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "ws": "^8.18.0" }
+}
